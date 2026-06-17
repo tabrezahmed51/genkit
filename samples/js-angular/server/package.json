@@ -17,12 +17,12 @@
     "genkit": "^1.0.4",
     "@genkit-ai/google-genai": "^1.17.0",
     "@genkit-ai/express": "^1.17.0",
-    "express": "^4.21.0",
+    "express": "^4.22.2",
     "partial-json": "^0.1.7"
   },
   "devDependencies": {
     "genkit-cli": "^1.17.0",
     "typescript": "^5.4.5",
-    "tsx": "^4.19.2"
+    "tsx": "^4.22.4"
   }
 }
