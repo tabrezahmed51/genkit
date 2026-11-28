@@ -1,0 +1,65 @@
+# Grouped updates: one PR per ecosystem instead of dozens that conflict.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions-minor-patch:
+        applies-to: version-updates
+        update-types: ["minor", "patch"]
+      actions-security:
+        applies-to: security-updates
+        patterns: ["*"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-patch:
+        applies-to: version-updates
+        update-types: ["minor", "patch"]
+      npm-security:
+        applies-to: security-updates
+        patterns: ["*"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      uv-minor-patch:
+        applies-to: version-updates
+        update-types: ["minor", "patch"]
+      uv-security:
+        applies-to: security-updates
+        patterns: ["*"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      gomod-minor-patch:
+        applies-to: version-updates
+        update-types: ["minor", "patch"]
+      gomod-security:
+        applies-to: security-updates
+        patterns: ["*"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
