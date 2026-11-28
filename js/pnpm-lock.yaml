@@ -103,8 +103,8 @@ importers:
         specifier: ~1.25.0
         version: 1.25.1(@opentelemetry/api@1.10.0)
       '@opentelemetry/core':
-        specifier: ~2.8.0
-        version: 2.8.0(@opentelemetry/api@1.10.0)
+        specifier: ~2.9.0
+        version: 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/exporter-jaeger':
         specifier: ^1.25.0
         version: 1.30.1(@opentelemetry/api@1.10.0)
@@ -584,10 +584,10 @@ importers:
         version: 6.0.2(encoding@0.1.13)(winston@3.19.0)
       '@google-cloud/opentelemetry-cloud-monitoring-exporter':
         specifier: ^0.19.0
-        version: 0.19.0(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.8.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-metrics@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
+        version: 0.19.0(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.9.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-metrics@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
       '@google-cloud/opentelemetry-cloud-trace-exporter':
         specifier: ^2.4.1
-        version: 2.4.1(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.8.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
+        version: 2.4.1(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.9.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
       '@google-cloud/opentelemetry-resource-util':
         specifier: ^2.4.0
         version: 2.4.0(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
@@ -598,8 +598,8 @@ importers:
         specifier: ^0.49.1
         version: 0.49.2(@opentelemetry/api@1.10.0)(encoding@0.1.13)
       '@opentelemetry/core':
-        specifier: ~2.8.0
-        version: 2.8.0(@opentelemetry/api@1.10.0)
+        specifier: ~2.9.0
+        version: 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/instrumentation':
         specifier: ^0.52.0
         version: 0.52.1(@opentelemetry/api@1.10.0)
@@ -3798,8 +3798,8 @@ packages:
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
 
-  '@opentelemetry/core@2.8.0':
-    resolution: {integrity: sha512-hd1Lfh8p545nNz+jq1Ejfz+Mn1hyLuxYn1YzTfFNrxr8urEWMNQLPf1Th8kjOH+HxwawCrtgBp8JpBUR4ZSgww==}
+  '@opentelemetry/core@2.9.0':
+    resolution: {integrity: sha512-m2nckMT80NnmjTYSPjJQObBJ+8dgkoajEOUbznL8AHZ3T3yHRk2P7gI1PhEBc1+lOnrYE9UWrWHqJDsmqjmNbw==}
     engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
@@ -9548,12 +9548,12 @@ snapshots:
       - supports-color
     optional: true
 
-  '@google-cloud/opentelemetry-cloud-monitoring-exporter@0.19.0(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.8.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-metrics@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)':
+  '@google-cloud/opentelemetry-cloud-monitoring-exporter@0.19.0(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.9.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-metrics@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)':
     dependencies:
       '@google-cloud/opentelemetry-resource-util': 2.4.0(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
       '@google-cloud/precise-date': 4.0.0
       '@opentelemetry/api': 1.10.0
-      '@opentelemetry/core': 2.8.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/core': 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 1.25.1(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-metrics': 1.25.1(@opentelemetry/api@1.10.0)
       google-auth-library: 9.15.1(encoding@0.1.13)
@@ -9577,13 +9577,13 @@ snapshots:
       - supports-color
     optional: true
 
-  '@google-cloud/opentelemetry-cloud-trace-exporter@2.4.1(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.8.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)':
+  '@google-cloud/opentelemetry-cloud-trace-exporter@2.4.1(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.9.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)':
     dependencies:
       '@google-cloud/opentelemetry-resource-util': 2.4.0(@opentelemetry/resources@1.25.1(@opentelemetry/api@1.10.0))(encoding@0.1.13)
       '@grpc/grpc-js': 1.10.10
       '@grpc/proto-loader': 0.7.13
       '@opentelemetry/api': 1.10.0
-      '@opentelemetry/core': 2.8.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/core': 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 1.25.1(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-trace-base': 1.25.1(@opentelemetry/api@1.10.0)
       google-auth-library: 9.15.1(encoding@0.1.13)
@@ -10379,7 +10379,7 @@ snapshots:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/semantic-conventions': 1.28.0
 
-  '@opentelemetry/core@2.8.0(@opentelemetry/api@1.10.0)':
+  '@opentelemetry/core@2.9.0(@opentelemetry/api@1.10.0)':
     dependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/semantic-conventions': 1.45.0
